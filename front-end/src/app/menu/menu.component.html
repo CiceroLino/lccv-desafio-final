@@ -1,0 +1,32 @@
+<div class="d-flex">
+  <ul class="nav flex-column" id="sidebar">
+    <div class="sidebar-heading">
+      Patrimônio
+    </div>
+    <li class="nav-item">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              Contratos
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="list-group">
+              <a routerLink="/contratos" class="list-group-item list-group-item-action" aria-current="true">
+                Cadastrar
+              </a>
+            </div>
+            <div class="list-group">
+              <a routerLink="/listar" class="list-group-item list-group-item-action" aria-current="true">
+                Listar
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
