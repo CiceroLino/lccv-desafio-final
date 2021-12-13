@@ -1,1 +1,153 @@
-<p>index works!</p>
+<div class="d-flex flex-column flex-fill">
+  <div class="container-fluid mt-1">
+      <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">
+                  Cadastrar contrato
+              </li>
+          </ol>
+      </nav>
+
+      <div class="card">
+          <div class="card-header">
+              <h5 class="card-title">Cadastrar contrato</h5>
+          </div>
+          <div class="card-body">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="geral-tab" data-bs-toggle="tab"
+                          data-bs-target="#geral" type="button" role="tab" aria-controls="geral"
+                          aria-selected="true">Geral</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="itens-tab" data-bs-toggle="tab" data-bs-target="#itens"
+                          type="button" role="tab" aria-controls="itens" aria-selected="true">Itens</button>
+                  </li>
+              </ul>
+
+              <div class="tab-content mt-2" id="myTabContent">
+                  <div class="tab-pane fade show active" id="geral" role="tabpanel"
+                      aria-labelledby="geral-tab">
+                      <form>
+                          <div class="row g-3">
+                              <div class="col">
+                                  <label for="numero" class="form-label">Número (nnn/aaa)</label>
+                                  <input type="text" class="form-control" id="numero" disabled>
+                              </div>
+                              <div class="col">
+                                  <label for="prestador" class="form-label">Prestador</label>
+                                  <input type="text" class="form-control" id="prestador" disabled>
+                              </div>
+                              <div class="col">
+                                  <label for="valor" class="form-label">Valor</label>
+                                  <input type="number" class="form-control" id="valor" disabled>
+                              </div>
+                          </div>
+                          <div class="row g-3 mt-1">
+                              <div class="col">
+                                  <label for="inicio_vigencia" class="form-label">Início da vigência</label>
+                                  <input type="date" class="form-control" id="inicio_vigencia">
+                              </div>
+                              <div class="col">
+                                  <label for="termino_vigencia" class="form-label">Término da vigência</label>
+                                  <input type="date" class="form-control" id="termino_vigencia">
+                              </div>
+                          </div>
+                      </form>
+                  </div>
+                  <div class="tab-pane fade" id="itens" role="tabpanel" aria-labelledby="itens-tab">
+                      <div class="card">
+                          <div class="card-header">
+                              <div class="d-flex justify-content-between">
+                                  <div class="d-flex align-items-center">
+                                      <h5 class="card-title">Itens</h5>
+                                  </div>
+                                  <button class="btn btn-primary btn-sm">
+                                      <i class="bi bi-plus-lg"></i>
+                                  </button>
+                              </div>
+                          </div>
+                          <div class="card-body">
+                              <table class="table">
+                                  <thead>
+                                      <tr>
+                                          <th scope="col">#</th>
+                                          <th scope="col">Serviço</th>
+                                          <th scope="col">Quantidade</th>
+                                          <th scope="col">Valor unitário</th>
+                                          <th scope="col">Valor total</th>
+                                          <th scope="col">Itens</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                      <tr>
+                                          <th scope="row">1</th>
+                                          <td>Teste</td>
+                                          <td>1</td>
+                                          <td>10,00</td>
+                                          <td>10,00</td>
+                                          <td>
+                                              <button type="button" class="btn btn-primary btn-sm"
+                                                  data-bs-toggle="modal"
+                                                  data-bs-target="#visualizarItemModal">
+                                                  <i class="bi bi-search"></i>
+                                              </button>
+                                          </td>
+                                      </tr>
+                                  </tbody>
+                                  <tfoot>
+                                      <tr>
+                                          <th scope="row">Total</th>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td>10,00</td>
+                                          <td></td>
+                                      </tr>
+                                  </tfoot>
+                              </table>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+          <div class="alert alert-success text-center mt-1" role="alert">
+              OK
+          </div>
+          <div class="card-footer">
+              <div class="d-flex justify-content-end">
+                  <div class="btn-group gap-1" role="group" aria-label="Basic example">
+                      <button type="button" class="btn btn-secondary">Voltar</button>
+                      <button type="button" class="btn btn-primary">Enviar</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="modal fade" id="visualizarItemModal" tabindex="-1" aria-labelledby="visualizarItemModalLabel"
+aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+      <div class="modal-header">
+          <h5 class="modal-title" id="visualizarItemModal">Visualizar item</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <dl>
+              <dt>Número da ordem</dt>
+              <dd>1/2021</dd>
+
+              <dt>Projeto</dt>
+              <dd>Projeto 01</dd>
+          </dl>
+      </div>
+      <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+  </div>
+</div>
+</div>
