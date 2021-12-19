@@ -12,11 +12,11 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='NaturezaDespeza',
+            name='NaturezaDespesa',
             fields=[
-                ('id_natureza_despeza', models.AutoField(primary_key=True, serialize=False)),
-                ('cod_natureza_despeza', models.CharField(max_length=8)),
-                ('desc_natureza_despeza', models.CharField(max_length=60)),
+                ('id_natureza_despesa', models.AutoField(primary_key=True, serialize=False)),
+                ('cod_natureza_despesa', models.CharField(max_length=8)),
+                ('desc_natureza_despesa', models.CharField(max_length=60)),
             ],
         ),
     ]
