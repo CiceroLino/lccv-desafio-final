@@ -120,6 +120,11 @@
                                 <button class="nav-link" id="itens-tab" data-bs-toggle="tab" data-bs-target="#itens"
                                     type="button" role="tab" aria-controls="itens" aria-selected="true">Itens</button>
                             </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="projetos-tab" data-bs-toggle="tab"
+                                    data-bs-target="#projetos" type="button" role="tab" aria-controls="projetos"
+                                    aria-selected="true">Projetos</button>
+                            </li>
                         </ul>
 
                         <div class="tab-content mt-2" id="myTabContent">
@@ -162,7 +167,8 @@
                                             <div class="d-flex align-items-center">
                                                 <h5 class="card-title">Itens</h5>
                                             </div>
-                                            <button class="btn btn-primary btn-sm">
+                                            <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                                                data-bs-target="#cadastrarItemModal">
                                                 <i class="bi bi-plus-lg"></i>
                                             </button>
                                         </div>
@@ -211,6 +217,15 @@
                                 </div>
 
                             </div>
+
+                            <div class="tab-pane fade show active" id="projetos" role="tabpanel"
+                                aria-labelledby="projetos-tab">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlTextarea1"
+                                        class="form-label lead align-items-center">Projetos</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                            </div>
                             <!-- // Aba Itens -->
                         </div>
 
@@ -250,6 +265,25 @@
                         <dt>Projeto</dt>
                         <dd>Projeto 01</dd>
                     </dl>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Cadastrar Item -->
+    <div class="modal fade" id="cadastrarItemModal" tabindex="-1" aria-labelledby="cadastrarItemModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cadastrarItemModal">Cadastrar item</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h1>Formulário</h1>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
