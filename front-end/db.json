@@ -1,0 +1,25 @@
+{
+	"contrato": [
+	{
+    "id": "1",
+		"tombamento" : "Teste1",
+		"produto" : "Argila",
+		"valor": "R$ 10,00",
+		"item": 7
+	},
+  {
+    "id": "2",
+		"tombamento" : "Teste2",
+		"produto" : "Cerâmica",
+		"valor": "R$ 20,00",
+		"item": 9
+	},
+  {
+    "id": "3",
+		"tombamento" : "Teste3",
+		"produto" : "Tijolo",
+		"valor": "R$ 30,00",
+		"item": 10
+	}
+	]
+}
