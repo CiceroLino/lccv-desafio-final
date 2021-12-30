@@ -1,0 +1,47 @@
+<div class="card position-component">
+  <div class="d-flex flex-column flex-fill container-fluid mt-1">
+    <div class="card-header">
+      <div class="d-flex justify-content-between">
+        <div class="d-flex align-items-center">
+          <h5 class="card-title">Bens</h5>
+        </div>
+        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#cadastrarBemModal">
+          <i class="bi bi-plus-lg"></i>
+        </button>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="d-flex flex-column flex-fill">
+        <div class="container-fluid mt-1">
+          <table id="example" class="display" width="100%"></table>
+          <table class="table" width="100%">
+            <thead>
+              <tr>
+                <th scope="col">Número</th>
+                <th scope="col">Prestador</th>
+                <th scope="col">Nota fiscal</th>
+                <th scope="col">Valor</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+              <tr *ngFor="let b of bens; let i = index">
+                <th scope="row">{{ b.id }}</th>
+                <td>{{ b.tombamento }}</td>
+                <td>{{ b.prestador }}</td>
+                <td>{{ b.valor }}</td>
+                <td>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                    data-bs-target="#visualizarItemModal">
+                    <i class="bi bi-search"></i>
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

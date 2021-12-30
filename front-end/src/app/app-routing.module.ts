@@ -7,6 +7,11 @@ const routes: Routes = [
     path: 'contratos',
     loadChildren: () => import ('./modules/contratos/contratos.module')
       .then( m => m.ContratosModule)
+  },
+  {
+    path: 'listar',
+    loadChildren: () => import ('./modules/listar/listar.module')
+      .then( m => m.ListarModule)
   }
 ];
 

@@ -6,8 +6,8 @@
     <div class="container-fluid mt-1">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="/index.html">Início</a></li>
-          <li class="breadcrumb-item"><a href="/index.html">Bens</a></li>
+          <li class="breadcrumb-item"><a routerLink="/">Início</a></li>
+          <li class="breadcrumb-item"><a routerLink="/listar">Bens</a></li>
           <li class="breadcrumb-item active" aria-current="page">
             Cadastrar
           </li>
@@ -96,11 +96,10 @@
                     </thead>
                     <tbody>
                       <tr *ngFor="let c of contratos; let i = index">
-                        <th scope="row" >{{ c.id }}</th>
+                        <th scope="row">{{ c.id }}</th>
                         <td>{{ c.tombamento }}</td>
                         <td>{{ c.produto }}</td>
                         <td>{{ c.valor }}</td>
-                        <td>{{ c.item }}</td>
                         <td>
                           <!-- Button trigger modal -->
                           <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
@@ -115,7 +114,7 @@
                         <th scope="row">Total</th>
                         <td></td>
                         <td></td>
-                        <td></td>
+                        <td>R$ 60,00</td>
                         <td></td>
                       </tr>
                     </tfoot>
@@ -125,7 +124,7 @@
 
             </div>
 
-            <div class="tab-pane fade show active" id="observacoes" role="tabpanel" aria-labelledby="observacoes-tab">
+            <div class="tab-pane fade" id="observacoes" role="tabpanel" aria-labelledby="observacoes-tab">
               <div class="mb-3">
                 <label for="exampleFormControlTextarea1" class="form-label lead align-items-center">Observações</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
@@ -135,9 +134,11 @@
           </div>
 
         </div>
-        <div class="alert alert-success text-center mt-1" role="alert">
-          OK
-        </div>
+        <!--
+          <div class="alert alert-success text-center mt-1" role="alert">
+            OK
+          </div>
+         -->
         <div class="card-footer">
           <div class="d-flex justify-content-end">
             <div class="btn-group gap-1" role="group" aria-label="Basic example">

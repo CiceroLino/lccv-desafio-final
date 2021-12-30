@@ -1,6 +1,6 @@
-export class Contrato {
+export class Bens {
   id!: number
   tombamento!: string
-  produto!: string
+  prestador!: string
   valor!: number
 }

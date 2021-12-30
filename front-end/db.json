@@ -1,25 +1,42 @@
 {
-	"contrato": [
+	"contratos": [
 	{
     "id": "1",
-		"tombamento" : "Teste1",
-		"produto" : "Argila",
-		"valor": "R$ 10,00",
-		"item": 7
+		"tombamento" : "25186189",
+		"produto" : "Produto 1",
+		"valor": "R$ 10,00"
 	},
   {
     "id": "2",
-		"tombamento" : "Teste2",
-		"produto" : "Cerâmica",
-		"valor": "R$ 20,00",
-		"item": 9
+		"tombamento" : "198456848",
+		"produto" : "Produto 2",
+		"valor": "R$ 20,00"
 	},
   {
     "id": "3",
-		"tombamento" : "Teste3",
-		"produto" : "Tijolo",
-		"valor": "R$ 30,00",
-		"item": 10
+		"tombamento" : "18499873",
+		"produto" : "Produto 3",
+		"valor": "R$ 30,00"
 	}
-	]
+	],
+  "bens": [
+  {
+    "id": "1",
+    "tombamento" : "25186189",
+    "prestador" : "Prestador 1",
+    "valor": "R$ 101,00"
+  },
+  {
+    "id": "2",
+    "tombamento" : "198456848",
+    "prestador" : "Prestador 2",
+    "valor": "R$ 201,00"
+  },
+  {
+    "id": "3",
+    "tombamento" : "18499873",
+    "prestador" : "Prestador 3",
+    "valor": "R$ 301,00"
+  }
+  ]
 }
